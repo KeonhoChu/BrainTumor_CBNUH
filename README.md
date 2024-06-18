@@ -1,4 +1,5 @@
 # Brain Tumor Segmentation using U-Net
+![표지](https://i.namu.wiki/i/Ks820Gkfip4fs4Xs-z1v3p8QPTW-B6ZskH80CZeEjdpQsj_rNfb67sMMaxOIB-V8-uUesbMSgkpC1Kc0iZbpZA.svg)
 
 ## Overview
 
