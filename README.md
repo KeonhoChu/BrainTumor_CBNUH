@@ -18,30 +18,30 @@ The dataset is organized as follows:
   /train
     /images
       /adc
-        adc_image_1.nii
-        adc_image_2.nii
+        adc_image_1.tiff
+        adc_image_2.tiff
         ...
       /dwi
-        dwi_image_1.nii
-        dwi_image_2.nii
+        dwi_image_1.tiff
+        dwi_image_2.tiff
         ...
     /masks
-      mask_1.nii
-      mask_2.nii
+      mask_1.tiff
+      mask_2.tiff
       ...
   /validation
     /images
       /adc
-        adc_image_1.nii
-        adc_image_2.nii
+        adc_image_1.tiff
+        adc_image_2.tiff
         ...
       /dwi
-        dwi_image_1.nii
-        dwi_image_2.nii
+        dwi_image_1.tiff
+        dwi_image_2.tiff
         ...
     /masks
-      mask_1.nii
-      mask_2.nii
+      mask_1.tiff
+      mask_2.tiff
       ...
 ```
 - **Images Folder**: Contains the ADC and DWI MRI images.
@@ -79,8 +79,8 @@ The U-Net model is implemented using TensorFlow/Keras. Key layers include:
 - **Optimizer**: Adam
 - **Loss Function**: Binary Cross-Entropy/Dice Coefficient
 - **Metrics**: Accuracy, Dice Score
-- **Batch Size**: 16
-- **Epochs**: 50
+- **Batch Size**: 64
+- **Epochs**: 1000
 
 ### Training Procedure
 1. **Data Splitting**: The dataset is split into training and validation sets.
@@ -99,41 +99,8 @@ The model's performance is evaluated using the following metrics:
 
 The trained U-Net model is expected to provide high-quality segmentations of brain tumors from ADC and DWI MRI images. The evaluation results will include detailed metrics and qualitative visualizations of the segmentation performance.
 
-## Usage
-
-### Prerequisites
-- Python 3.7+
-- TensorFlow/Keras
-- NumPy
-- Nibabel (for handling NIfTI files)
-- Matplotlib (for visualizations)
-
-### Running the Code
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/username/brain_tumor_segmentation.git
-   cd brain_tumor_segmentation
-   ```
-2. **Install dependencies**:
-   ```bash
-   pip install -r requirements.txt
-   ```
-3. **Prepare the dataset**: Ensure the dataset is structured as described above.
-4. **Train the model**:
-   ```bash
-   python train.py
-   ```
-5. **Evaluate the model**:
-   ```bash
-   python evaluate.py
-   ```
 
 ## Conclusion
 
 This project demonstrates the application of the U-Net neural network for brain tumor segmentation from MRI images. The use of ADC and DWI modalities provides a comprehensive approach to accurately identify and segment brain tumors, aiding in clinical diagnostics and treatment planning.
 
-For further details and contributions, please refer to the project repository or contact the project maintainers.
-
----
-
-This README provides a detailed overview of the project, including dataset structure, preprocessing steps, U-Net model architecture, training procedures, evaluation metrics, and usage instructions. Feel free to adapt and expand it based on the specific needs and additional details of your project.
