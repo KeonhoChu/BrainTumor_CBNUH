@@ -19,7 +19,7 @@ The dataset is organized as follows:
     /images
       /adc
         adc_image_1.tiff
-        adc_image_2.tiff
+        adc_image_2.tiff
         ...
       /dwi
         dwi_image_1.tiff
