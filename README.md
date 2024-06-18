@@ -10,6 +10,11 @@ This project focuses on the segmentation of brain tumors from MRI images using t
 The dataset is provided by Chung Buk National University Hospital and includes MRI images from brain tumor patients. The dataset comprises two types of MRI images:
 1. **Apparent Diffusion Coefficient (ADC)**
 2. **Diffusion Weighted Imaging (DWI)**
+3. **Mask Image (MASK)**
+   
+| Sample Image1                                                                 | Sample Image2                                                                  | Sample Image3                                                                 |
+|-------------------------------------------------------------------------------|-------------------------------------------------------------------------------|-------------------------------------------------------------------------------|
+| ![sample1 Image](https://github.com/KeonhoChu/BrainTumor_CBNUH/blob/main/sample_1.png?raw=true) | ![sample2 image](https://github.com/KeonhoChu/BrainTumor_CBNUH/blob/main/sample_2.png?raw=true) | ![sample3 image](https://github.com/KeonhoChu/BrainTumor_CBNUH/blob/main/sample_3.png?raw=true) |
 
 ### Structure
 The dataset is organized as follows:
